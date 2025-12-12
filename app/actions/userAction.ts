@@ -38,7 +38,7 @@ export async function getUsers() {
     }
 }
 
-export async function updateProfile(formData: FormData) {
+export async function updateProfile(prevState: any, formData: FormData) {
     const session = await auth()
     if (!session?.user) return { error: "Unauthorized" }
 

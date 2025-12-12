@@ -37,6 +37,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 const { email, password } = parsed.data;
 
                 const user = await getUser(email);
+                console.log(user);
                 if (!user) {
                     console.log("❌ No user found");
                     return null;
@@ -55,10 +56,10 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             },
         }),
     ],
-    secret: "d5d4f616e1e1924a9155dd21e07add0d719db8abc9fb8eebd23530e2d628e3a2",
+    secret: process.env.AUTH_SECRET,
     trustHost: true,
     pages: {
-        signIn: "/signin",
+        signIn: "/sign-in",
     },
     callbacks: {
         async jwt({ token, user }) {
