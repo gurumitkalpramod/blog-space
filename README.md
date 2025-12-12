@@ -25,6 +25,7 @@ This project leverages a cutting-edge tech stack to ensure scalability, performa
 ### Styling & UI Components
 -   **[Tailwind CSS v4](https://tailwindcss.com/):** A utility-first CSS framework for rapid UI development.
 -   **[Radix UI](https://www.radix-ui.com/):** Unstyled, accessible components for building high-quality design systems (Primitives for Dialog, Tabs, Avatar, etc.).
+-   **[Shadcn UI](https://ui.shadcn.com/):** A collection of unstyled, accessible React components built with Radix UI and Tailwind CSS.
 -   **[Lucide React](https://lucide.dev/):** Beautiful and consistent icons.
 -   **[Framer Motion](https://www.framer.com/motion/):** A production-ready motion library for React to add smooth animations.
 -   **`clsx` & `tailwind-merge`:** For constructing and merging conditional class names efficiently.
