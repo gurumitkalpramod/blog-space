@@ -1,4 +1,4 @@
-import { Rocket } from "lucide-react";
+import { Github, Linkedin, Rocket } from "lucide-react";
 import Link from "next/link";
 
 export function Footer() {
@@ -52,11 +52,57 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t pt-8 sm:flex-row">
-                    <p className="text-xs text-muted-foreground">
-                        &copy; {new Date().getFullYear()} BlogSpace. All rights reserved.
-                    </p>
+                    <div className="flex flex-col items-center gap-2 sm:items-start">
+                        <p className="text-xs text-muted-foreground">
+                            &copy; {new Date().getFullYear()} BlogSpace. All rights reserved.
+                        </p>
+                        <p className="text-xs text-muted-foreground">
+                            Developed by <span className="font-medium text-foreground">Gurumitkal Pramod</span>
+                        </p>
+                        <div className="flex flex-col items-center gap-1 text-xs text-muted-foreground sm:items-start">
+                            <div>
+                                <span className="font-medium">GitHub: </span>
+                                <Link
+                                    href="https://github.com/gurumitkalpramod"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-primary hover:underline"
+                                >
+                                    https://github.com/gurumitkalpramod
+                                </Link>
+                            </div>
+                            <div>
+                                <span className="font-medium">LinkedIn: </span>
+                                <Link
+                                    href="https://www.linkedin.com/in/pramod-gurumitkal-a04456222"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:text-primary hover:underline"
+                                >
+                                    https://www.linkedin.com/in/pramod-gurumitkal-a04456222
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                     <div className="flex gap-4">
-                        {/* Social icons can go here */}
+                        <Link
+                            href="https://github.com/gurumitkalpramod"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-muted-foreground transition-colors hover:text-primary"
+                        >
+                            <Github className="h-4 w-4" />
+                            <span className="sr-only">GitHub</span>
+                        </Link>
+                        <Link
+                            href="https://www.linkedin.com/in/pramod-gurumitkal-a04456222"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-muted-foreground transition-colors hover:text-primary"
+                        >
+                            <Linkedin className="h-4 w-4" />
+                            <span className="sr-only">LinkedIn</span>
+                        </Link>
                     </div>
                 </div>
             </div>
